@@ -2,7 +2,7 @@ from pydub import AudioSegment
 from pydub.silence import split_on_silence
 
 # Load the audio file
-audio = AudioSegment.from_file("Desktop/Raagbilaaval5.wav")
+audio = AudioSegment.from_file("Path_to_your_audio_file")
 
 # Define the minimum silence length and silence threshold in milliseconds
 min_silence_length = 100  # 1 second
@@ -17,4 +17,4 @@ for segment in segments:
     output_audio += segment
 
 # Export the output audio to a file
-output_audio.export("Desktop/output1.wav", format="wav")
+output_audio.export("Output_file", format="wav")
